@@ -39,3 +39,11 @@ hr {
   height: 35px;
   margin-top: 5px;
 }
+
+.list-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 50px;
+  font-size: 18px;
+}

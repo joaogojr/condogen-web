@@ -17,6 +17,7 @@ import { LoginComponent } from './components/login/login.component';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatIconModule,
     MatListModule,
     AppRoutingModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
