@@ -8,8 +8,10 @@ import { ResidentsComponent } from "./components/residents/residents.component";
 
 import { LoginComponent } from "./components/login/login.component";
 import { NavigationComponent } from "./components/navigation/navigation.component";
+import { AuthGuardService } from "./services/auth-guard.service";
 
 const routes: Routes = [
+  { path: "", redirectTo: "avisos", pathMatch: "full" },
   {
     path: "",
     component: NavigationComponent,
@@ -19,6 +21,7 @@ const routes: Routes = [
       { path: "gastos", component: CostsComponent },
       { path: "moradores", component: ResidentsComponent },
     ],
+    //canActivateChild: [AuthGuardService],
   },
   { path: "login", component: LoginComponent },
 ];
@@ -33,4 +36,5 @@ export const routingComponents = [
   CalendarComponent,
   CostsComponent,
   ResidentsComponent,
+  LoginComponent,
 ];
