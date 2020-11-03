@@ -16,7 +16,8 @@ import { CostsComponent } from "./components/costs/costs.component";
 import { ResidentsComponent } from "./components/residents/residents.component";
 import { LoginComponent } from "./components/login/login.component";
 
-import { MatInputModule } from '@angular/material/input';
+import { MatInputModule } from "@angular/material/input";
+import { MatCheckboxModule } from "@angular/material/checkbox";
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { MatInputModule } from '@angular/material/input';
     MatIconModule,
     MatListModule,
     AppRoutingModule,
-    MatInputModule
+    MatInputModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
