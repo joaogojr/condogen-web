@@ -16,6 +16,8 @@ import { CostsComponent } from "./components/costs/costs.component";
 import { ResidentsComponent } from "./components/residents/residents.component";
 import { LoginComponent } from "./components/login/login.component";
 
+import { MatInputModule } from '@angular/material/input';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +38,7 @@ import { LoginComponent } from "./components/login/login.component";
     MatIconModule,
     MatListModule,
     AppRoutingModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],
