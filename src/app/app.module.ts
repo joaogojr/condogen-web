@@ -18,6 +18,7 @@ import { LoginComponent } from "./components/login/login.component";
 
 import { MatInputModule } from "@angular/material/input";
 import { MatCheckboxModule } from "@angular/material/checkbox";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { MatCheckboxModule } from "@angular/material/checkbox";
     AppRoutingModule,
     MatInputModule,
     MatCheckboxModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

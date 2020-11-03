@@ -1,1 +1,16 @@
-<p>costs works!</p>
+<div style="margin: 22px; font-size: 25px; font-weight: 400;">Gastos</div>
+<div class="white-box">
+    <div class="title1">
+        Lista de Gastos
+    </div>
+    <hr>
+    <div *ngFor="let item of list" class="list-box">
+        <span style="color: #673ab7;">{{ item.date }}</span>
+        <span style="">{{ item.place }}</span>
+        <span style="">{{ item.description }}</span>      
+        <span style="color: #673ab7;">R$ {{ item.value }}</span>
+    </div>
+    <div *ngIf="list.length === 0" class="residents-warnings">
+        Nenhum Gasto Registrado
+    </div>
+</div>

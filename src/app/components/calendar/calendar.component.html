@@ -1,29 +1,28 @@
 <div style="margin: 22px; font-size: 25px; font-weight: 400;">Calendário</div>
 <div class="white-box">
     <div class="title1">
-        Avisos de Moradores
+        Definir Evento
     </div>
     <hr>
-    <div class="residents-warnings">
-        Sem avisos no momento
+    <div class="input-box">
+        <input style="height: 30px;margin-right: 10px;margin-top: 15px;" type="date" [(ngModel)]="date">
+        <mat-form-field class="warnings-input" >
+            <mat-label>Descrição</mat-label>
+            <input matInput placeholder="Descrição" [(ngModel)]="description"  > 
+        </mat-form-field>
+        <button mat-raised-button class="btn-warings" (click)="eventBtn()" [disabled]="!description || !date">Definir</button>
     </div>
 </div>
 <div class="white-box">
     <div class="title1">
-        Emitir Aviso
+        Lista de eventos
     </div>
     <hr>
-    <div class="input-box">
-        <mat-form-field class="warnings-input">
-            <mat-label>Escreva um Aviso</mat-label>
-            <input matInput placeholder="Escreva um Aviso">
-        </mat-form-field>
-        <button mat-raised-button class="btn-warings">Emitir</button>
+    <div *ngFor="let item of list" class="list-box">
+        <span style="color: #673ab7; margin-right: 15px;">{{ item.date }}</span>
+        {{ item.description }}
     </div>
-    <div class="title2">
-        Avisos Emitidos
-    </div>
-    <div class="residents-warnings">
-        Sem avisos no momento
+    <div *ngIf="list.length === 0" class="residents-warnings">
+        Sem Eventos no momento
     </div>
 </div>
