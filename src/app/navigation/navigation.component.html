@@ -5,10 +5,10 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Avisos</a>
-      <a mat-list-item href="#">Calendário</a>
-      <a mat-list-item href="#">Gastos</a>
-      <a mat-list-item href="#">Moradores</a>
+      <a mat-list-item href="avisos">Avisos</a>
+      <a mat-list-item href="calendario">Calendário</a>
+      <a mat-list-item href="gastos">Gastos</a>
+      <a mat-list-item href="moradores">Moradores</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -24,5 +24,6 @@
       <span>Condogen</span>
     </mat-toolbar>
     <!-- Add Content Here -->
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

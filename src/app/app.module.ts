@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -10,13 +11,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { WarningsComponent } from './warnings/warnings.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { CostsComponent } from './costs/costs.component';
+import { ResidentsComponent } from './residents/residents.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    WarningsComponent
+    routingComponents,
+    CalendarComponent,
+    CostsComponent,
+    ResidentsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +32,8 @@ import { WarningsComponent } from './warnings/warnings.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
