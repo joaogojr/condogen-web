@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "condogen-web"
+  "defaultProject": "condogen-web",
+  "cli": {
+    "analytics": false
+  }
 }

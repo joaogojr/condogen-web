@@ -1,0 +1,41 @@
+.white-box {
+  width: auto;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.title1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.title2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+hr {
+  margin-bottom: 20px;
+}
+
+/* --------------------------------------------------------- */
+
+.residents-warnings {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.input-box {
+  width: 100%;
+  display: flex;
+}
+.warnings-input {
+  width: -webkit-fill-available;
+  margin-right: 20px;
+}
+.btn-warings {
+  height: 35px;
+  margin-top: 5px;
+}
