@@ -9,11 +9,13 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { CalendarComponent } from './calendar/calendar.component';
 import { CostsComponent } from './costs/costs.component';
 import { ResidentsComponent } from './residents/residents.component';
+
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { ResidentsComponent } from './residents/residents.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
