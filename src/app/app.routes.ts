@@ -10,5 +10,7 @@ export const ROUTES: Routes = [
   {
     path: '', component: LoginComponent,
     children: []
-  }
+  },
+  // Handle all other routes
+  { path: '**', redirectTo: '/' }
 ]
