@@ -6,9 +6,9 @@
     <hr>
     <div *ngFor="let item of list" class="list-box">
         <span style="color: #673ab7;">{{ item.date }}</span>
-        <span style="">{{ item.place }}</span>
+        <span style="">{{ item.name }}</span>
         <span style="">{{ item.description }}</span>      
-        <span style="color: #673ab7;">R$ {{ item.value }}</span>
+        <span style="color: #673ab7;">R$ {{ item.cost }}</span>
     </div>
     <div *ngIf="list.length === 0" class="residents-warnings">
         Nenhum Gasto Registrado

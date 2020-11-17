@@ -1,10 +1,5 @@
 <div style="margin: 22px; font-size: 25px; font-weight: 400">Avisos</div>
 <div class="white-box">
-  <div class="title1">Avisos de Moradores</div>
-  <hr />
-  <div class="residents-warnings">Sem avisos no momento</div>
-</div>
-<div class="white-box">
   <div class="title1">Emitir Aviso</div>
   <hr />
   <div class="input-box">
@@ -15,5 +10,8 @@
     <button mat-raised-button class="btn-warings">Emitir</button>
   </div>
   <div class="title2">Avisos Emitidos</div>
-  <div class="residents-warnings">Sem avisos no momento</div>
+  <div *ngFor="let item of list" class="list-box">
+    <span style="color: #673ab7;">{{ item.date }}</span>
+    <span style="">{{ item.description }}</span>      
+</div>
 </div>

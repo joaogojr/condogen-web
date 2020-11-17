@@ -1,1 +1,27 @@
-<p>residents works!</p>
+<div style="margin: 22px; font-size: 25px; font-weight: 400;">Cadastro</div>
+<div class="white-box">
+    <div class="title1">
+        Cadastrar Morador
+    </div>
+    <hr>
+    <div class="fomr-box">
+        <mat-form-field class="warnings-input" >
+            <mat-label>Nome</mat-label>
+            <input type="text" matInput placeholder="Nome" [(ngModel)]="name"  > 
+        </mat-form-field>
+        <mat-form-field class="warnings-input" >
+            <mat-label>Email</mat-label>
+            <input type="email" matInput placeholder="Email" [(ngModel)]="email"  > 
+        </mat-form-field>
+        <mat-form-field class="warnings-input" >
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="Password" [(ngModel)]="password"  > 
+        </mat-form-field>
+        <mat-form-field class="warnings-input" >
+            <mat-label>Telefone</mat-label>
+            <input type="tel" matInput placeholder="Telefone" [(ngModel)]="phone"  > 
+        </mat-form-field>
+        <button mat-raised-button class="btn-warings" (click)="cadastrar()">Cadastrar</button>
+    </div>
+
+</div>
