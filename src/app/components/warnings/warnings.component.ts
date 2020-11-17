@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WarningsComponent implements OnInit {
 
-  list = [{description: 'Goteira na garagem', date:'10-08-2020'},{description: 'Elevador estragado', date:'05-08-2020'}];
+  list = [{description: 'Manutenção no encanamento do bloco A, entre as 08:00 e 10:00', date:'15-11-2020'}];
 
   constructor() { }
 

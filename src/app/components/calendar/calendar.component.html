@@ -18,11 +18,7 @@
         Lista de eventos
     </div>
     <hr>
-    <div *ngFor="let item of list" class="list-box">
-        <span style="color: #673ab7; margin-right: 15px;">{{ item.date }}</span>
-        {{ item.description }}
-    </div>
-    <div *ngIf="list.length === 0" class="residents-warnings">
+    <div  class="residents-warnings">
         Sem Eventos no momento
     </div>
 </div>

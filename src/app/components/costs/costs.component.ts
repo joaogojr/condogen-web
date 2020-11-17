@@ -7,7 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CostsComponent implements OnInit {
 
-  list = [{date: '10-05-2020', place: 'CEMIG', description: 'Conta de Luz', value: '2000'},{date: '14-05-2020', place: 'COPASA', description: 'Conta de água', value: '1600'}];
+  list = [{
+    id: 1,
+    date: '10/11/20',
+    name: 'Jardinagem Pelo Lar',
+    cost: '850,00',
+    description: 'Manutenção do jardim principal',
+  },
+  {
+    id: 2,
+    date: '07/11/20',
+    description: 'Distribuidora de água para o condomínio.',
+    name: 'Copasa',
+    cost: '7.342,59',
+  },
+  {
+    id: 3,
+    date: '07/11/20',
+    name: 'Cemig',
+    cost: '9.756,20',
+    description: 'Distribuidora de energia para o condomínio',
+  }];
 
   constructor() { }
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { map } from 'rxjs/operators'
+import { HttpService } from '../../services/http.service'
 
 @Component({
   selector: 'app-residents',
@@ -7,9 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResidentsComponent implements OnInit {
 
-  constructor() { }
+  name;
+  email;
+  password;
+  phone;
+
+  
+
+  constructor(private http: HttpService) { }
 
   ngOnInit(): void {
+  }
+
+  cadastrar() {
+    const aux = {
+      email: this.email,
+      password: this.password,
+      name: this.name,
+      phone: this.phone,
+      role: 'user'
+    }
+
+    this.http.genericPost(`/users`, aux, null).subscribe(() => {
+
+    }, (error) => {
+      alert('Erro')
+    })
   }
 
 }
