@@ -17,11 +17,7 @@ import { ResidentsComponent } from "./components/residents/residents.component";
 import { LoginComponent } from "./components/login/login.component";
 
 import { MatInputModule } from '@angular/material/input';
-<<<<<<< HEAD
-import { MatIconModule } from '@angular/material/icon';
 import { FormsModule }   from '@angular/forms';
-=======
->>>>>>> 28894585bc57d9ccad3144ac7dea1b702941aaa4
 
 @NgModule({
   declarations: [
