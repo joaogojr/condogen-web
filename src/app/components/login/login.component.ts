@@ -48,6 +48,21 @@ export class LoginComponent implements OnInit {
     });
   }
   Login() {
-    window.location.href = "/avisos";
+    console.log(this.email, this.password)
+    if (!this.email || !this.password) {
+      alert("Campos de usuário ou senha inválido.");
+    } else {
+      window.location.href = "/avisos";
+      // this.authService.login(
+      //   this.email, this.password
+      // ).subscribe(
+      //   (user) => {
+      //     this.saveData(user);
+      //   },
+      //   (error) => {
+      //     alert("Error")
+      //   }
+      // );
+    }
   }
 }
