@@ -16,8 +16,9 @@ import { CostsComponent } from "./components/costs/costs.component";
 import { ResidentsComponent } from "./components/residents/residents.component";
 import { LoginComponent } from "./components/login/login.component";
 
-import { MatInputModule } from '@angular/material/input';
-import { FormsModule }   from '@angular/forms';
+import { MatInputModule } from "@angular/material/input";
+import { MatCheckboxModule } from "@angular/material/checkbox";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { FormsModule }   from '@angular/forms';
     MatListModule,
     AppRoutingModule,
     MatInputModule,
-    FormsModule
+    MatCheckboxModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
