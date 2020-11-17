@@ -19,7 +19,7 @@
     rgba(222, 222, 222, 1) 9%,
     rgba(255, 255, 255, 1) 73%
   );
-  width: 450px;
+  width: 420px;
   height: 700px;
   margin: auto;
   padding: 0 50px;
@@ -27,26 +27,36 @@
   box-sizing: border-box;
   box-shadow: 1px 1px 5px #000;
 }
-
 .logo {
-  margin: 50px auto;
-  width: 120px;
-  height: 120px;
-  border-radius: 25%;
-  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  padding: 50px;
+  width: 200px;
+}
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .login-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px auto 0;
-  width: 120px;
+  width: 140px;
   height: 40px;
+  margin: 50px auto 0;
   border-radius: 25px;
   font-weight: 600;
   font-size: 17px;
-  background-color: rgba(46, 33, 163, 1);
   color: #fff;
+}
+.login-basic {
+  background-color: rgba(46, 33, 163, 1);
+}
+.login-social {
+  background-color: red;
 }
 input,
 input::placeholder {
