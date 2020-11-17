@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  icon = '../../../assets/images/icon-app.png'
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

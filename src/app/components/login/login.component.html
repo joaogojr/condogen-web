@@ -1,6 +1,6 @@
 <div class="wrapper">
   <div class="wrapper-form">
-    <div class="logo"></div>
+    <div class="logo"><img src="{{icon}}" alt=""></div>
     <mat-form-field class="login-input">
       <mat-label>E-mail</mat-label>
       <input type="text" matInput placeholder="Insira seu e-mail" />
@@ -9,6 +9,9 @@
       <mat-label>Senha</mat-label>
       <input type="password" matInput placeholder="Insira sua senha" />
     </mat-form-field>
-    <button class="login-btn" mat-raised-button="primary">Login</button>
+    <div class="login-options">
+      <button class="login-btn login-basic" mat-raised-button="primary">Login</button>
+      <button class="login-btn login-social" mat-raised-button="primary">Google</button>
+    </div>
   </div>
 </div>
