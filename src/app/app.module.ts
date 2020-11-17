@@ -20,6 +20,8 @@ import { MatInputModule } from "@angular/material/input";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { FormsModule } from "@angular/forms";
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,8 +45,9 @@ import { FormsModule } from "@angular/forms";
     MatInputModule,
     MatCheckboxModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
